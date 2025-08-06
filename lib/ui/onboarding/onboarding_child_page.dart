@@ -46,7 +46,7 @@ class OnboardingChildPage extends StatelessWidget {
       child: TextButton(
         onPressed: skipOnPressed,
         child: Text(
-          "SKIP",
+          "BỎ QUA",
           style: TextStyle(
             fontSize: 16,
             fontFamily: "Lato",
@@ -161,7 +161,7 @@ class OnboardingChildPage extends StatelessWidget {
               backOnPressed();
             },
             child: Text(
-              "BACK",
+              "QUAY LẠI",
               style: TextStyle(
                 fontSize: 16,
                 fontFamily: "Lato",
@@ -185,8 +185,8 @@ class OnboardingChildPage extends StatelessWidget {
             ),
             child: Text(
               onboardingPagePosition == OnboardingPagePosition.page3
-                  ? "GET STARTED"
-                  : "NEXT",
+                  ? "BẮT ĐẦU NGAY"
+                  : "TIẾP",
               style: const TextStyle(
                 fontSize: 16,
                 fontFamily: "Lato",

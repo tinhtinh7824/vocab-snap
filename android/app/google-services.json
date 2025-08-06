@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "347523440233",
+    "project_id": "flutter2004-2025",
+    "storage_bucket": "flutter2004-2025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347523440233:android:e641a47466386235c34cf8",
+        "android_client_info": {
+          "package_name": "com.example.app_tieng_anh_de_an"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347523440233-dma1gagbkri45qpqd37eumtov07bharb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.app_tieng_anh_de_an",
+            "certificate_hash": "d548555a92b43364e938b58ca2177917158aafbd"
+          }
+        },
+        {
+          "client_id": "347523440233-gjlti0nfcr1k9f7ibv79v6kb1fec58pi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv0O7fH3HkNtYiTKnZ0DvFWxxhyddFY5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347523440233-gjlti0nfcr1k9f7ibv79v6kb1fec58pi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "347523440233-45lfkiqf4bncrdehbt7419s00i62t3q8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.appTiengAnhDeAn"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

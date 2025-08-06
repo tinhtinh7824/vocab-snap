@@ -1,6 +1,5 @@
-import 'package:app_tieng_anh_de_an/ui/onboarding/onboarding_page_view.dart';
-//import 'package:app_tieng_anh_de_an/ui/onboarding/onboarding_page_view.dart';
-//import 'package:app_tieng_anh_de_an/ui/splash/splash.dart';
+import 'package:app_tieng_anh_de_an/ui/login/login_page.dart';
+import 'package:app_tieng_anh_de_an/ui/welcome/welcome_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,13 +13,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Todo List Demo Course',
+      title: 'Học từ vựng',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme:
+            ColorScheme.fromSeed(
+              seedColor:
+                  Colors.deepPurple,
+            ),
         useMaterial3: true,
         fontFamily: "Lato",
       ),
-      home: const OnboardingPageView(),
+      initialRoute: '/welcome',
+      routes: {
+        '/welcome':
+            (context) =>
+                const WelcomePage(),
+        '/login':
+            (context) => LoginPage(),
+      },
     );
   }
 }

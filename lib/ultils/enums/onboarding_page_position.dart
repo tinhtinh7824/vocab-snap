@@ -5,33 +5,33 @@ extension OnboardingPagePositionExtension on OnboardingPagePosition {
   String onboardingPageImage() {
     switch (this) {
       case OnboardingPagePosition.page1:
-        return "assets/images/Frame161.png";
+        return "assets/images/illustration-2.png";
       case OnboardingPagePosition.page2:
-        return "assets/images/Frame162.png";
+        return "assets/images/illustration-1.png";
       case OnboardingPagePosition.page3:
-        return "assets/images/Group182.png";
+        return "assets/images/illustration.png";
     }
   }
 
   String onboardingPageTitle() {
     switch (this) {
       case OnboardingPagePosition.page1:
-        return "Ho";
+        return "Học từ vựng bằng hình ảnh";
       case OnboardingPagePosition.page2:
-        return "Hi";
+        return "Biến mọi thứ thành bài học";
       case OnboardingPagePosition.page3:
-        return "Hohi";
+        return "Học tự nhiên, nhớ lâu hơn";
     }
   }
 
   String onboardingPageContent() {
     switch (this) {
       case OnboardingPagePosition.page1:
-        return "Ho";
+        return "Ghi nhớ từ vựng nhanh hơn với hình ảnh thực tế, giúp bạn học dễ dàng và hiệu quả hơn!";
       case OnboardingPagePosition.page2:
-        return "Hi";
+        return "Chụp ảnh, quét vật thể và khám phá từ vựng tiếng Anh ngay lập tức!";
       case OnboardingPagePosition.page3:
-        return "Hohi";
+        return "Liên kết từ vựng với hình ảnh xung quanh, giúp bạn học như người bản xứ!";
     }
   }
 }

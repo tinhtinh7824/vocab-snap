@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:app_tieng_anh_de_an/ui/login/login_page.dart';
+import 'package:app_tieng_anh_de_an/ui/register/register_page.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -24,8 +26,8 @@ class WelcomePage extends StatelessWidget {
         children: [
           _buildTittleAndDesc(),
           const Spacer(),
-          _buildButtonLogin(),
-          _buildButtonRegister(),
+          _buildButtonLogin(context),
+          _buildButtonRegister(context),
         ],
       ),
     );
@@ -67,21 +69,24 @@ class WelcomePage extends StatelessWidget {
     );
   }
 
-  Widget _buildButtonLogin() {
+  Widget _buildButtonLogin(BuildContext context) {
     return Container(
       width: double.infinity,
       height: 48,
       padding: EdgeInsets.symmetric(horizontal: 24),
       child: ElevatedButton(
         onPressed: () {
-          // Xu ly sau
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const LoginPage()),
+          );
         },
         style: ElevatedButton.styleFrom(
           backgroundColor: const Color(0xFF8875FF),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
         ),
         child: const Text(
-          "LOGIN",
+          "ĐĂNG NHẬP",
           style: const TextStyle(
             fontSize: 16,
             fontFamily: "Lato",
@@ -92,7 +97,7 @@ class WelcomePage extends StatelessWidget {
     );
   }
 
-  Widget _buildButtonRegister() {
+  Widget _buildButtonRegister(BuildContext context) {
     return Container(
       width: double.infinity,
       height: 48,
@@ -100,7 +105,10 @@ class WelcomePage extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 28),
       child: ElevatedButton(
         onPressed: () {
-          // Xu ly sau
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const RegisterPage()),
+          );
         },
         style: OutlinedButton.styleFrom(
           backgroundColor: Colors.transparent,
@@ -108,7 +116,7 @@ class WelcomePage extends StatelessWidget {
           side: BorderSide(width: 1, color: const Color(0xFF8875FF)),
         ),
         child: const Text(
-          "CREATE ACCOUNT",
+          "TẠO TÀI KHOẢN MỚI",
           style: const TextStyle(
             fontSize: 16,
             fontFamily: "Lato",
