@@ -41,11 +41,9 @@ def save_words(
 ):
     saved = 0
     for item in words:
-        # ❌ Bỏ qua nếu nghĩa không hợp lệ
         if "Không tìm thấy nghĩa" in item.meaning:
             continue
 
-        # 🔄 Xoá bản ghi cũ nếu đã tồn tại
         existing = db.query(ReviewWord).filter_by(
             user_id=current_user.id,
             word=item.word
@@ -53,7 +51,6 @@ def save_words(
         if existing:
             db.delete(existing)
 
-        # ✅ Lưu bản mới
         review = ReviewWord(
             word=item.word,
             meaning=item.meaning,
